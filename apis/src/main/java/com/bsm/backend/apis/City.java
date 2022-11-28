@@ -12,7 +12,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class City {
-
     @Id
     @Column(name = "city_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
