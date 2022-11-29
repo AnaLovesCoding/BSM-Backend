@@ -24,4 +24,5 @@ public class Product {
 
     @Column(name = "current_price")
     private Long currentPrice;
+
 }
