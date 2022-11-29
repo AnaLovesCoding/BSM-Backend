@@ -1,9 +1,6 @@
 package com.bsm.backend.apis;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -17,6 +14,7 @@ public class Product {
 
     @Id
     @Column(name = "product_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long productId;
 
     @Column(name = "name")
@@ -24,5 +22,4 @@ public class Product {
 
     @Column(name = "current_price")
     private Long currentPrice;
-
 }

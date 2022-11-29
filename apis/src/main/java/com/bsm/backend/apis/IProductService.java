@@ -1,5 +1,7 @@
 package com.bsm.backend.apis;
+
 import java.util.List;
+
 public interface IProductService {
     List<Product> findAllProducts();
 

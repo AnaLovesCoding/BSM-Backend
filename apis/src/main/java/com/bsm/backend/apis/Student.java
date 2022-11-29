@@ -1,4 +1,5 @@
 package com.bsm.backend.apis;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -30,8 +31,4 @@ public class Student {
 
     @Column(name = "minor")
     private String minor;
-
-
-
-
 }

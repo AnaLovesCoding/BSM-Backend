@@ -1,12 +1,15 @@
 package com.bsm.backend.apis;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class StudentService implements IStudentService {
     private final StudentRepository repository;
+
     @Override
     public List<Student> findAllStudents() {
         return repository.findAll();
