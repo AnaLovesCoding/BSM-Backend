@@ -1,10 +1,10 @@
 package com.bsm.backend.apis.user;
 
-import com.bsm.backend.apis.Address;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+
 
 @Entity
 @Table(name = "bsm_users")
@@ -14,6 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Users {
+
     @Id
     @Column(name = "bronco_id")
     private Long broncoId;
@@ -30,10 +31,7 @@ public class Users {
     @Column(name = "phone")
     private int phone;
 
-    @Embedded
-    private Address address;
 
-//    @Enumerated(EnumType.STRING)
-//    @Column(name = "user_types")
-//    private BsmUserType[] userTypes;
+
+
 }
