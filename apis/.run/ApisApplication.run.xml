@@ -1,13 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ApisApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+  <configuration default="false" name="BSM-Application" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="com.bsm.backend.apis.ApisApplication" />
     <module name="apis" />
-    <extension name="coverage">
-      <pattern>
-        <option name="PATTERN" value="com.bsm.backend.apis.*" />
-        <option name="ENABLED" value="true" />
-      </pattern>
-    </extension>
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
