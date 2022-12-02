@@ -1,8 +1,5 @@
 package com.bsm.backend.apis.bsmusers;
 
-import com.bsm.backend.apis.student.IStudentService;
-import com.bsm.backend.apis.student.Student;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

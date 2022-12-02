@@ -18,9 +18,9 @@ public class ProductController {
         return productService.findAllProducts();
     }
 
-    @GetMapping("/{pid}")
-    public Product FindProductById(@PathVariable long pid) {
-        return productService.findProductById(pid);
+    @GetMapping("/{productId}")
+    public Product FindProductById(@PathVariable long productId) {
+        return productService.findProductById(productId);
     }
 
     @PostMapping("")
