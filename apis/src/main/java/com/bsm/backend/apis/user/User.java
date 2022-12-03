@@ -1,6 +1,9 @@
 package com.bsm.backend.apis.user;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 
 import java.util.Date;
@@ -13,7 +16,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Users {
+public class User {
 
     @Id
     @Column(name = "bronco_id")
@@ -31,7 +34,6 @@ public class Users {
     @Column(name = "phone")
     private int phone;
 
-
-
-
+    @Column(name = "user_type")
+    private String userType; // STUDENT, PROFESSOR, STUDENT_AND_PROFESSOR
 }

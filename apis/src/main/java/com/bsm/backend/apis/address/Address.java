@@ -13,7 +13,7 @@ import java.util.Date;
 public class Address {
     @Id
     @Column(name = "address_id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long addressId;
 
     @Column(name = "street")

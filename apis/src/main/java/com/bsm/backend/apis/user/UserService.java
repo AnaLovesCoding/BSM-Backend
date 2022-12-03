@@ -5,16 +5,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class UsersService implements IUsersService {
+public class UserService implements IUserService {
     private final UsersRepository repository;
 
     @Override
-    public Users findUsersById(long broncoID) {
+    public User findUserById(long broncoID) {
         return repository.findById(broncoID).orElseGet(null);
     }
 
     @Override
-    public Users saveUsers(Users users) {
-        return repository.save(users);
+    public User saveUser(User user) {
+        return repository.save(user);
     }
 }
